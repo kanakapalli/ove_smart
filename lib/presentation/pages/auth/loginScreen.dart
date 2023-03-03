@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ovesmart/presentation/pages/mainscreen/homescreen.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -16,7 +17,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       body: SafeArea(
         child: GestureDetector(
@@ -257,19 +257,17 @@ class _LoginScreenState extends State<LoginScreen> {
                               onPressed: () {},
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: const [
-                                  Icon(
-                                    Icons.home,
-                                    color: Colors.blue,
-                                    size: 20.0,
-                                    textDirection: TextDirection.ltr,
-                                    semanticLabel:
-                                        'Icon', // Announced in accessibility modes (e.g TalkBack/VoiceOver). This label does not show in the UI.
+                                children: [
+                                  Image.asset(
+                                    'assets/svg/google.png',
+                                    // color: Colors.grey,
+
+                                    // semanticsLabel: 'Acme Logo'
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 10,
                                   ),
-                                  Text('Google'),
+                                  const Text('Google'),
                                 ],
                               )),
                         ),
@@ -298,19 +296,15 @@ class _LoginScreenState extends State<LoginScreen> {
                                       child: Row(
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
-                                        children: const [
-                                          Icon(
-                                            Icons.home,
-                                            color: Colors.blue,
-                                            size: 20.0,
-                                            textDirection: TextDirection.ltr,
-                                            semanticLabel:
-                                                'Icon', // Announced in accessibility modes (e.g TalkBack/VoiceOver). This label does not show in the UI.
+                                        children: [
+                                          Image.asset(
+                                            'assets/svg/facebook.png',
+                                            // color: Colors.grey,
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 10,
                                           ),
-                                          Text('Facebook'),
+                                          const Text('Facebook'),
                                         ],
                                       )),
                                   // FFButtonWidget(
@@ -360,19 +354,17 @@ class _LoginScreenState extends State<LoginScreen> {
                                       child: Row(
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
-                                        children: const [
-                                          Icon(
-                                            Icons.home,
-                                            color: Colors.blue,
-                                            size: 20.0,
-                                            textDirection: TextDirection.ltr,
-                                            semanticLabel:
-                                                'Icon', // Announced in accessibility modes (e.g TalkBack/VoiceOver). This label does not show in the UI.
+                                        children: [
+                                          Image.asset(
+                                            'assets/svg/apple.png',
+                                            // color: Colors.grey,
                                           ),
-                                          SizedBox(
+                                          // Wid(),
+
+                                          const SizedBox(
                                             width: 10,
                                           ),
-                                          Text('Apple'),
+                                          const Text('Apple'),
                                         ],
                                       )),
                                   // FFButtonWidget(
